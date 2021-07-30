@@ -1,13 +1,22 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 function Nav() {
 
   return (
+    <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">
-        Your personal CMS
-      </a>
+      <Link className="navbar-brand" to="/">
+        Home
+      </Link>
+      <Link className="navbar-brand" to="/contact">
+        Contact
+      </Link>
+      <Link className="navbar-brand" to="/portfolio">
+        Portfolio
+      </Link>
     </nav>
+    </div>
   );
 }
 
